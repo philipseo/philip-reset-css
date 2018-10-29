@@ -1,4 +1,4 @@
 ## Philip Reset Css
-It is Custom Meyerweb reset.
 
+Customization of Eric Meyer's CSS Reset
 * ref: <https://meyerweb.com/>

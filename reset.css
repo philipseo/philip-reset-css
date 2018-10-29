@@ -31,17 +31,14 @@ ul, ol {
 
 blockquote, q {
     quotes: none;
-    &:before, &:after {
-        content: none;
-    }
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
 }
 
-a {
+a, a:active, a:hover, a:focus, a:visited{
     text-decoration: none;
-    &:active, &:hover, &:focus, &:visited {
-        text-decoration: none;
-        outline: none;
-    }
+    outline: none;
 }
 
 input, select, textarea, button {
@@ -52,9 +49,13 @@ input, select, textarea, button {
     resize: none;
     outline: 0;
     -webkit-appearance: none;
-    &:active, &:hover, &:focus, &:visited {
-        outline: 0;
-    }
+}
+
+input:active, input:hover, input:focus, input:visited,
+select:active, select:hover, select:focus, select:visited,
+textarea:active, textarea:hover, textarea:focus, textarea:visited,
+button:active, button:hover, button:focus, button:visited {
+    outline: 0;
 }
 
 table {
